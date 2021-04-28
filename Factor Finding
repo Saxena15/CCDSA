@@ -1,0 +1,33 @@
+                                                                 //Codechef DSA series 2021\\
+                                                               //< problem code : DIFACTRS >\\
+
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		ArrayList<Integer> arr = new ArrayList<>();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		
+		for(int i = 1; i<=a; i++){
+		    if(a%i ==0){
+		        arr.add(i);
+		    }
+		}
+		System.out.println(arr.size());
+		for(int j =0; j<arr.size() ; j++){
+		    
+		    System.out.print(arr.get(j) + " ");
+		}
+	}
+}
